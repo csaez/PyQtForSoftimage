@@ -49,6 +49,7 @@ def get_mapping():
 def set_language(lang):
     if lang not in list_languages():
         print "WARNING: " + lang + " key_mapping not found."
+        return
     _prefs["language"] = lang
 
 
