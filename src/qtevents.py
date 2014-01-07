@@ -39,6 +39,10 @@ def consumeKey(ctxt, pressed):
     if mask and C.siAltMask:
         modifier |= Qt.AltModifier
 
+    # Offseting kcode on AltGr mask
+    if mask == 6 and kcode + 600 in KEY_MAPPING:
+        kcode += 600
+
     # Generate a Qt Key Event to be processed
     result = KEY_MAPPING.get(kcode)
     if result:
