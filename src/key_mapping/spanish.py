@@ -70,10 +70,10 @@ KEY_MAPPING = {
     99: (Qt.Key_3,            '3',    Qt.KeypadModifier),
     100: (Qt.Key_4,            '4',    Qt.KeypadModifier),
     101: (Qt.Key_5,            '5',    Qt.KeypadModifier),
-    102: (Qt.Key_5,            '6',    Qt.KeypadModifier),
-    103: (Qt.Key_5,            '7',    Qt.KeypadModifier),
-    104: (Qt.Key_5,            '8',    Qt.KeypadModifier),
-    105: (Qt.Key_5,            '9',    Qt.KeypadModifier),
+    102: (Qt.Key_6,            '6',    Qt.KeypadModifier),
+    103: (Qt.Key_7,            '7',    Qt.KeypadModifier),
+    104: (Qt.Key_8,            '8',    Qt.KeypadModifier),
+    105: (Qt.Key_9,            '9',    Qt.KeypadModifier),
     106: (Qt.Key_Asterisk,     '*',    Qt.KeypadModifier),
     107: (Qt.Key_Plus,         '+',    Qt.KeypadModifier),
     109: (Qt.Key_Minus,        '-',    Qt.KeypadModifier),
@@ -93,23 +93,24 @@ KEY_MAPPING = {
     113: (Qt.Key_F12,          '',     None),
     144: (Qt.Key_NumLock,      '',     None),
     145: (Qt.Key_ScrollLock,   '',     None),
-    186: (Qt.Key_Semicolon,    ';',    None),
-    187: (Qt.Key_Equal,        '=',    None),
+    186: (Qt.Key_Semicolon,    u'`',   None),
+    187: (Qt.Key_Equal,        '+',    None),
     188: (Qt.Key_Comma,        ',',    None),
     189: (Qt.Key_Minus,        '-',    None),
     190: (Qt.Key_Period,       '.',    None),
-    191: (Qt.Key_Slash,        '/',    None),
-    192: (Qt.Key_QuoteLeft,    '`',    None),
+    191: (Qt.Key_Slash,        u'ç',   None),
+    192: (Qt.Key_QuoteLeft,    u'ñ',   None),
     219: (Qt.Key_BracketLeft,  "'",    None),
-    220: (Qt.Key_Backslash,    '\\',   None),
-    221: (Qt.Key_BraceRight,   '¡',    None),
-    222: (Qt.Key_QuoteLeft,    "'",    None),
+    220: (Qt.Key_Backslash,    u'º',   None),
+    221: (Qt.Key_BraceRight,   u'¡',   None),
+    222: (Qt.Key_QuoteLeft,    u"´",   None),
+    226: (Qt.Key_Less,         "<",    None),
 
     # Calculate the SHIFT key as 300 + key value
     348: (Qt.Key_ParenRight,   '=',    None),  # Shift+0
     349: (Qt.Key_Exclam,       '!',    None),  # Shift+1
     350: (Qt.Key_At,           '"',    None),  # Shift+2
-    351: (Qt.Key_NumberSign,   '·',    None),  # Shift+3
+    351: (Qt.Key_NumberSign,   u'·',   None),  # Shift+3
     352: (Qt.Key_Dollar,       '$',    None),  # Shift+4
     353: (Qt.Key_Percent,      '%',    None),  # Shift+5
     354: (Qt.Key_6,            '&',    None),  # Shift+6
@@ -144,15 +145,26 @@ KEY_MAPPING = {
     389: (Qt.Key_Y,            'Y',    None),
     390: (Qt.Key_Z,            'Z',    None),
 
-    486: (Qt.Key_Colon,        ':',    None),  # Shift+;
-    487: (Qt.Key_Plus,         '+',    None),  # Shift++
+    486: (Qt.Key_Colon,        '^',    None),  # Shift+;
+    487: (Qt.Key_Plus,         '*',    None),  # Shift++
     488: (Qt.Key_Less,         ';',    None),  # Shift+,
     489: (Qt.Key_Underscore,   '_',    None),  # Shift+-
     490: (Qt.Key_Greater,      ':',    None),  # Shift+>
-    491: (Qt.Key_Question,     '?',    None),  # Shift+?
-    492: (Qt.Key_AsciiTilde,   '~',    None),  # Shift+`
+    491: (Qt.Key_Question,     u'Ç',   None),  # Shift+?
+    492: (Qt.Key_AsciiTilde,   u'Ñ',   None),  # Shift+`
     519: (Qt.Key_BraceLeft,    '?',    None),  # Shift+[
-    520: (Qt.Key_Bar,          '|',    None),  # Shift+
-    521: (Qt.Key_BraceRight,   '¿',    None),  # Shift+]
-    522: (Qt.Key_QuoteDbl,     '"',    None),  # Shift+'
+    520: (Qt.Key_Bar,          u'ª',   None),  # Shift+
+    521: (Qt.Key_BraceRight,   u'¿',   None),  # Shift+]
+    522: (Qt.Key_QuoteDbl,     u'¨',   None),  # Shift+'
+    526: (Qt.Key_Less,         ">",    None),
+
+    649: (Qt.Key_1,            '|',    None),  # AltGr+1
+    650: (Qt.Key_2,            '@',    None),  # AltGr+2
+    651: (Qt.Key_3,            '#',    None),  # AltGr+3
+    654: (Qt.Key_6,            u'¬',   None),  # AltGr+6
+    786: (Qt.Key_QuoteLeft,    '[',    None),  # AltGr+`
+    787: (Qt.Key_Equal,        ']',    None),  # AltGr++
+    791: (Qt.Key_Slash,        '}',    None),  # AltGr+ç
+    820: (Qt.Key_Backslash,    '\\',   None),  # AltGr+º
+    822: (Qt.Key_QuoteLeft,    "{",    None),  # AltGr+´
 }
